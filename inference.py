@@ -298,7 +298,7 @@ def main():
 
     # Paths for the separate mode directories
     ckpt_dir = Path(args.ckpt_dir)
-    unet_dir = ckpt_dir / "transformer"
+    unet_dir = ckpt_dir / "unet"
     vae_dir = ckpt_dir / "vae"
     scheduler_dir = ckpt_dir / "scheduler"
 
