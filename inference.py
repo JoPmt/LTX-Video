@@ -43,7 +43,7 @@ def load_vae(vae_dir):
 
 
 def load_unet(unet_dir):
-    unet_ckpt_path = unet_dir / "unet_diffusion_pytorch_model.safetensors"
+    unet_ckpt_path = unet_dir / "diffusion_pytorch_model.safetensors"
     unet_config_path = unet_dir / "config.json"
     transformer_config = Transformer3DModel.load_config(unet_config_path)
     transformer = Transformer3DModel.from_config(transformer_config)
