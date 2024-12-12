@@ -30,7 +30,7 @@ MAX_NUM_FRAMES = 257
 
 
 def load_vae(vae_dir):
-    vae_ckpt_path = vae_dir / "vae_diffusion_pytorch_model.safetensors"
+    vae_ckpt_path = vae_dir / "diffusion_pytorch_model.safetensors"
     vae_config_path = vae_dir / "config.json"
     with open(vae_config_path, "r") as f:
         vae_config = json.load(f)
